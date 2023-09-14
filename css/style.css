@@ -327,6 +327,10 @@ a:focus {
         font-size: 14px;
         letter-spacing: 0;
     }
+    .carousel .carousel-img {
+        position: relative;
+        min-height: 450px;
+    }
 }
 
 @media (max-width: 767.98px) {
