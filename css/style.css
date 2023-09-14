@@ -309,24 +309,20 @@ a:focus {
     animation-duration: 1s;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
     .carousel,
     .carousel .carousel-item,
     .carousel .carousel-text {
-        height: calc(100vh - 105px);
+        height: calc(100vh - 50px); /* Adjust the value as needed */
     }
     
     .carousel .carousel-text h1 {
-        font-size: 35px;
-    }
-    
-    .carousel .carousel-text p {
-        font-size: 16px;
+        font-size: 20px; /* Adjust the font size as needed */
     }
     
     .carousel .carousel-text .btn {
-        padding: 12px 30px;
-        font-size: 15px;
+        padding: 8px 20px; /* Adjust the button padding as needed */
+        font-size: 14px;
         letter-spacing: 0;
     }
 }
