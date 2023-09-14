@@ -13,7 +13,7 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #454545;
+    color: #454545;.
     font-family: 'Nunito', sans-serif;
 }
 
@@ -222,6 +222,7 @@ a:focus {
     height: 100vh;
     min-height: 400px;
     background: #ffffff;
+    max-height: 700px;
 }
 
 .carousel .container-fluid {
