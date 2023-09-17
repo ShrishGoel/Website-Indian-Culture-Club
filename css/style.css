@@ -13,7 +13,7 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #454545;
+    color: #454545;.
     font-family: 'Nunito', sans-serif;
 }
 
@@ -56,10 +56,8 @@ a:focus {
 }
 
 .container-fluid {
-    padding-top: 12rem;
-    padding-bottom: 6rem;
-    background: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, .8)), url(../img/carousel-1.jpg) center center no-repeat;
-    background-size: cover;
+    max-width: 1366px;
+    max-height: 400px;
 }
 
 .back-to-top {
@@ -225,6 +223,7 @@ a:focus {
     height: 100vh;
     min-height: 400px;
     background: #ffffff;
+    max-height: 700px;
 }
 
 .carousel .container-fluid {
@@ -312,55 +311,28 @@ a:focus {
     animation-duration: 1s;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
     .carousel,
     .carousel .carousel-item,
     .carousel .carousel-text {
-        height: calc(100vh - 105px);
+        position: relative;
+        min-height: 450px;
     }
     
     .carousel .carousel-text h1 {
-        font-size: 35px;
-    }
-    
-    .carousel .carousel-text p {
-        font-size: 16px;
+        font-size: 60px; 
     }
     
     .carousel .carousel-text .btn {
-        padding: 12px 30px;
-        font-size: 15px;
-        letter-spacing: 0;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .carousel,
-    .carousel .carousel-item,
-    .carousel .carousel-text {
-        height: calc(100vh - 70px);
-    }
-    
-    .carousel .carousel-text h1 {
-        font-size: 30px;
-    }
-    
-    .carousel .carousel-text .btn {
-        padding: 10px 25px;
-        font-size: 15px;
-        letter-spacing: 0;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .carousel .carousel-text h1 {
-        font-size: 25px;
-    }
-    
-    .carousel .carousel-text .btn {
-        padding: 8px 20px;
+        padding: 8px 20px; 
         font-size: 14px;
         letter-spacing: 0;
+    }
+    .carousel .carousel-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -999,6 +971,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
+    margin-top: 20px;
 }
 
 .team .team-item {
