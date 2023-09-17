@@ -616,6 +616,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0;
+    margin-top: 50px;
 }
 
 .about .section-header {
